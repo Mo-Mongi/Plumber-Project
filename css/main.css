@@ -1,0 +1,768 @@
+/* Font-weight&Sizes
+12px
+14px
+18px
+28px
+45px
+
+100
+300
+400
+500
+600
+700 */
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    padding: 0px 8% 0px 8%;
+}
+.clr{
+    clear: both;
+}
+/* ==============================================
+                Head
+                13px     24px navbar
+                14px     30px sections
+                60px big titles
+============================================== */
+.head{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/headbg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.bg-overly{
+    width: 100%;
+    height: 100%;
+    padding: 1px 0px;
+    background: rgba(4,9,30,.9);
+}
+
+
+/* ==============================================
+                NavBAR Main
+                13px     24px navbar
+                14px     30px sections
+                60px big titles
+============================================== */
+
+.head nav{
+    position: fixed;
+    right: auto;
+    left: auto;
+    top: 0px;
+    width: 100%;
+    height: 60px;
+    padding:1px 5% 1px 9% ;
+    z-index: 997;
+    transition: 1s;
+}
+nav.black{
+    background-color: rgba(0, 0, 0, 0.795);
+}
+.head nav ul{
+    width: 40%;
+    list-style: none;
+    float: right;
+    padding-right: 80px;
+    margin-top: 15px;
+    text-align: right;
+    /* background-color: aquamarine; */
+
+}
+.head nav ul li{
+    display: inline-block;
+    margin: 3px 0px 3px 15px;
+
+}
+.head nav ul li a{
+    text-decoration: none;
+    font-size: 12px;
+    margin-right: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.head .logo{
+    width: 40%;
+    margin-left: 0%;
+    margin-top: 15px;
+    cursor: pointer;
+}
+/* ==============================================
+                Head BackGround
+                13px     24px navbar
+                14px     30px sections
+                60px big titles
+============================================== */
+.head .head-words{
+    width: 70%;
+    height: 40vh;
+    margin-top: 120px;
+    margin-left: 0%;
+    padding: 100px 0% 10px 9%;
+
+}
+.head h1{
+    margin-bottom: 3px;
+    font-size: 70px;
+    font-weight: 800;
+    color: white;
+}
+.head p{
+    margin-top: 0px;
+    width: 90%;
+    font-size: 14px;
+    font-weight: 300;
+    color: white;
+}
+.head .head-words button{
+    min-width: 210px;
+    height: 44px;
+    margin-top: 5px;
+    background-color: #f53f51;
+    color: white;
+    border: 1px #f53f51 solid;
+    border-radius: 20px;
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: 600;
+}
+                        /* 0000000000000000000000000000000
+                                    Head BG Hover
+                        111111111111111111111111111111 */
+.head .head-words button:hover{
+    background-color: transparent;
+    border: 1px white solid;
+    transition: .5s;
+    cursor: pointer;
+}
+/* ==============================================
+                Section 2 Top-div
+                13px     24px navbar
+                14px     30px sections
+                60px big titles
+============================================== */
+.section-2{
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 100px;
+}
+.section2-container{
+    width: 100%;
+    height: 100%;
+    padding: 1px 8%;
+}
+.section-2 .top-div{
+    position: relative;
+    width: 100%;
+    height: 20vh;
+    margin-top: 100px;
+    padding-top: 1px;
+}
+.section-2 .top-div h2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35%;
+    height: 100%;
+    margin-top: 0px;
+    margin-left: 3%;
+    text-align: right ;
+    font-size: 30px;
+    font-weight: 100;
+    line-height: 35px;
+}
+.section-2 .top-div p{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    margin-top: 7px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #777;
+    line-height: 24px;
+}
+
+/* ==============================================
+                Section 2 bottom-div
+                13px     24px navbar
+                14px     30px sections
+                60px big titles
+============================================== */
+.bottom-div{
+    width: 100%;
+    height: 80vh;
+    padding: 100px 0px;
+}
+.bottom-div .mrc{
+    /* background-color: aquamarine; */
+    float: left;
+    width: calc(100%/3);
+    height: 100%;
+    text-align: center;
+    position: relative;
+    
+}
+.mrc .icon-div{
+    position: relative;
+    /* background-color: rgba(0, 0, 255, 0.342);
+    border: 1px solid blue; */
+    width: 100%;
+    height: 40%;
+    padding-top: 50px;
+    z-index: 999;
+}
+
+
+.mrc .icon-div .hexagon{
+    position: absolute;
+    top: 10%;
+    left: 43.5%;
+    width: 64px;
+    height: 37px;
+    padding-top: 10px;
+    border-radius: 0%;
+    background-color: transparent;
+    border: .1px solid;
+    border-color:transparent #a7a7a794 ;
+    color: #a7a7a7;
+    z-index: -1;
+    transition: .5s ease;
+}
+.hexagon:before{
+    content: "";
+    border: inherit;
+    position: absolute;
+    top:0;
+    left: .5px;
+    transform: scale(2, 2);
+    background-color: transparent;
+    border-radius: inherit;
+    height: 100%;
+    width: 100%;
+    transform: rotate(60deg);
+    z-index: -1;
+}
+.hexagon::after{
+    content: "";
+    border: inherit;
+    position: absolute;
+    top: 0;
+    left: .5px;
+    transform: scale(2, 2);
+    background-color: transparent;
+    border-radius: inherit;
+    height: 100%;
+    width: 100%;
+    transform: rotate(-60deg);
+    z-index: -1;
+}
+
+.mrc .icon-div .hexagon:hover{
+    background-color: #f53f51;
+    color: white;
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+.hexagon:hover::after{
+    background-color: #f53f51;
+    color: white;
+    transition: .3s ease;
+    cursor: pointer;
+}
+.hexagon:hover::before{
+    background-color: #f53f51;
+    color: white;
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+
+/* ********************************** */
+/* ********************************** */
+/* ********************************** */
+
+
+
+
+
+/* ********************************** */
+/* ********************************** */
+/* ********************************** */                     
+.mrc h3{
+    width: 100%;
+    height: 20%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 15px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.mrc p{
+    width: 75%;
+    height: 40%;
+    margin: auto;
+    font-size: 14px;
+    color: #777;
+    text-align: center;
+    text-justify: distribute-all-lines;
+    line-height: 24px;
+}
+
+/* ==============================================
+                Section 3 TOOOOOOL
+                13px     24px navbar
+                14px     30px sections
+                60px big titles
+============================================== */
+
+.section-3{
+    width: 100%;
+    height: 860px;
+    background-color: #f9f9ff;
+    position: relative;
+    margin-bottom: 0px;
+}
+
+.section-3 .image-left{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    background-color: #f53f51;
+}
+.section-3 .image-left img{
+    width: 100%;
+    height: 100%;
+}
+
+.section-3 .right{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    padding-top: 80px;
+    padding-right: 80px;
+    padding-left: 70px;
+    height: 100%;
+    text-align: left;
+    /* background-color: aquamarine; */
+}
+.section-3 .right h2{
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+.section-3 .right p{
+    margin-top: 0px;
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.right .inside-right{
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    padding: 15px 30px;
+    width: 50%;
+    height: 210px;
+    background-color: white;
+}
+.inside-right h3{
+    font-weight: 600;
+}
+
+.inside-right:hover{
+    cursor: pointer;
+    box-shadow: -20px 20px 20px -12px #a3a2a27a;
+    transition: .5s;
+
+
+}
+/* ==============================================
+                VIDEO Section
+                13px     24px navbar
+                14px     30px sections
+                60px big titles
+============================================== */
+.Viedo-section{
+    width: 100%;
+    height: 155vh;
+    padding: 100px 8%;
+}
+
+.Viedo-section .counters-container{
+    width: 100%;
+    height: 40vh;
+    padding-top: 40px;
+}
+.Viedo-section .counters-container .counter{
+    float: left;
+    width: 22%;
+    margin-right: 3%;
+    height: 175px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.counter h2{
+    font-size: 60px;
+    margin: 0px;
+    color: #f53f51;
+    font-weight: 400;
+}
+.counter p{
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0;
+
+}
+.counter{
+    box-shadow: 0 10px 50px 0 rgb(245 63 81 / 30%);
+}
+
+
+.Viedo-section .video{
+    width: 100%;
+    height: 70vh;
+    margin-top: 120px;
+    background-color: #f53f51;
+}
+
+.video iframe{
+    width: 100%;
+    height: 100%;
+}
+.video{
+    width: 100%;
+    height: 100%;
+    padding-top: 1px;
+    background-image: url(../images/video-image4.webp);
+    background-size: cover;
+    background-position: center;
+}
+.video .text{
+    width: 80%;
+    margin: 100px 10% 40px 10%;
+    padding-top: 1px;
+    text-align: center;
+    color: white;
+}
+.video .text h2{
+    margin-bottom: 0px;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.video .text p{
+    padding: 0px 50px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.watch-btn{
+    width: 12.5%;
+    height: 100px;
+    padding: 0px;
+    margin: 10px auto 50px auto;
+    text-align: center;
+
+}
+.watch-btn a{
+    text-decoration: none;
+}
+.watch-btn p{
+    float: right;
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+}
+.watch-btn img{
+    float: left;
+}
+
+/* ==============================================
+                Ques Section
+                13px     24px navbar
+                14px     30px sections
+                60px big titles
+============================================== */
+.ques{
+    width: 100%;
+    height: 60vh;
+    padding: 100px 8%;
+    background-color: #04091e;
+    color: white;
+    text-align: center;
+
+}
+
+.ques h2{
+    font-size: 36px;
+    font-weight: 600;
+    margin: 3px auto;
+}
+.ques p{
+    width: 70%;
+    margin: 10px auto 50px auto;
+    font-size: 14px;
+    font-weight: 300;
+}
+.ques button{
+    min-width: 210px;
+    height: 44px;
+    background-color: white;
+    color: black;
+    border: 1px white solid;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: inherit;
+    border-radius: 20px;
+    font-weight: 600;
+}
+.ques button:hover{
+    background-color: transparent;
+    transition: .3s;
+    cursor: pointer;
+    color: white;
+}
+
+/* ==============================================
+                map-and-form-section Section
+                13px     24px navbar
+                14px     30px sections
+                60px big titles
+============================================== */
+.map-and-form-section{
+    width: 100%;
+    height: 90vh;
+    background-color: #fff;
+    padding: 0px 8%;
+}
+.map-and-form-section .map{
+    float: left;
+    width: 30%;
+    height: 100%;
+    background-color: #f9f9ff;
+}
+.map iframe{
+    width: 100%;
+    height: 99%;
+}
+
+.map-and-form-section .form{
+    float: right;
+    width: 70%;
+    height: 100%;
+    padding: 110px 60px 30px 120px;
+    background-color: #f9f9ff;
+}
+.form .text{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    padding:0px 20px ;
+    background-color: transparent;
+    border: 1px solid rgba(111,117,152,.3);
+    color: #777;
+    line-height: 48px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.form .email{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    padding:0px 20px ;
+    background-color: transparent;
+    border: 1px solid rgba(111,117,152,.3);
+    color: #777;
+    line-height: 48px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.form textarea{
+    width: 100%;
+    height: 150px;
+    margin-bottom: 10px;
+    padding:0px 20px ;
+    background-color: transparent;
+    border: 1px solid rgba(111,117,152,.3);
+    color: #777;
+    line-height: 48px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: inherit;
+}
+.form .send-div{
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    cursor: pointer;
+}
+.form .send{
+    min-width: 210px;
+    height: 44px;
+    padding: 1px 6px 1px 0px;
+    background-color: #f53f51;
+    color: white;
+    border: 1px #f53f51 solid;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: inherit;
+
+}
+.form .send-div i{
+    position: absolute;
+    color: white;
+    top: 15px;
+    right: 30px;
+}
+.form .send-div:hover i{
+    right: 20px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+/* ==============================================
+                Footerr Section
+                13px     24px navbar
+                14px     30px sections
+                60px big titles
+============================================== */
+
+footer{
+    width: 100%;
+    height: 65vh;
+    background-color: #04091e;
+    padding: 100px 8%;
+}
+footer .about{
+    float: left;
+    width: 40%;
+    height: 100%;
+    /* background-color: aquamarine; */
+}
+footer h3{
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+footer p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #777;
+}
+footer .about p{
+    margin-bottom: 30px;
+}
+footer i{
+    color: #f53f51;
+}
+footer .about span{
+    color: #f53f51;
+    cursor: pointer;
+}
+
+footer .newsletter{
+    position: relative;
+    float: left;
+    width: 40%;
+    height: 100%;
+    padding-left: 35px;
+    /* background-color: blue; */
+}
+footer .email-div{
+    position: relative;
+    width: 400px;
+    height: 45px;
+    background-color: #04091e;
+}
+footer .newsletter input{
+    width:360px;
+    height: 42px;
+    margin-bottom: 10px;
+    padding:0px 20px ;
+    background-color: white;
+    border: 0px solid rgba(111,117,152,.3);
+    color: #777;
+    line-height: 48px;
+    font-size: 16px;
+    font-weight: 300;
+}
+.newsletter .pink-rec{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 40px;
+    height: 42px;
+    padding-top: 14px;
+    padding-left: 13px;
+    background-color: #f53f51;
+    color: white;
+    cursor: pointer;
+}
+.pink-rec i{
+    color: white;
+    display: block;
+}
+
+footer .follow{
+    float: left;
+    width: 20%;
+    height: 100%;
+    padding-left: 35px;
+    /* background-color: red; */
+}
+
+.follow .icons-div i{
+    margin-right: 20px;
+    color: white;
+}
+
+.follow i:hover{
+    color: #f53f51;
+    transition: .5s;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/* .form .email{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    padding:0px 20px ;
+    background-color: transparent;
+    border: 1px solid rgba(111,117,152,.3);
+    color: #777;
+    line-height: 48px;
+    font-size: 16px;
+    font-weight: 300;
+} */
